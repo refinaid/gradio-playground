@@ -1,7 +1,60 @@
-# Refinaid - Markdown Parser
 
-![](./cover.png)
+def get_text() -> str:
+    return """\
+# Hello Refinaid Markdown Parser
 
+This is a markdown parser that will help you to summerize your ticket content.
+
+- Author: [Hugo ChunHo Lin](https://github.com/1chooo)
+- Date: 2024-04-30
+- Version: v0.0.1
+
+## Code Snippet
+
+```python
+def hello():
+    print("Hello, Refinaid!")
+
+if __name__ == "__main__":
+    hello()
+```
+
+## Math Formula
+
+$$ f(x) = x^2 + 2x + 1 $$
+
+## Table
+| Name | Age |
+|------|-----|
+| Hugo | 22  |
+
+## Image
+![Refinaid](https://avatars.githubusercontent.com/u/148614740?s=200&v=4)
+
+## List
+- Item 1
+- Item 2
+
+## Quote
+
+> "The only way to do great work is to love what you do." - Steve Jobs
+
+## Task List
+
+- [x] Task 1
+- [ ] Task 2
+
+## Reference
+
+- [refinaid/gradio-playground/markdown-parser](https://github.com/refinaid/gradio-playground)
+"""
+
+
+def render_preview(input_markdown_content: str) -> str:
+    return input_markdown_content
+
+def get_how_to_material() -> str:
+    return """\
 ## How to Use
 
 ### 1. Create `gr.Blocks` Object
@@ -53,26 +106,4 @@ Define a listener function that will be triggered when the input content changes
 def render_preview(input_markdown_content: str) -> str:
     return input_markdown_content
 ```
-
-
-## CONTACT INFO.
-
-> eCloudValley Cloud Developer Intern </br>
-> **Hugo ChunHo Lin**
-> 
-> <aside>
->   📩 E-mail: <a href="mailto:hugo970217@gmail.com">hugo970217@gmail.com</a>
-> <br>
->   🧳 Linkedin: <a href="https://www.linkedin.com/in/1chooo/">Hugo ChunHo Lin</a>
-> <br>
->   👨🏻‍💻 GitHub: <a href="https://github.com/1chooo">1chooo</a>
->    
-> </aside>
-
-
-## License
-Released under [MIT](./LICENSE) by [Refinaid](https://github.com/refinaid).
-
-This software can be modified and reused without restriction.
-The original license must be included with any copies of this software.
-If a significant portion of the source code is used, please provide a link back to this repository.
+"""
